@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="col-12 col-md-8">
-			
+
 			<div class="above-search">
 				<div class="btn-group">
 					<button type="button" class="btn btn-dark">Sort By</button>
@@ -41,15 +41,15 @@
 				</div>
 			</div>
 
-			<% for (let detail of details) { %> 
-				<form action="/search" method="post">		
+			<% for (let detail of details) { %>
+				<form action="/search" method="post">
 					<div class="card right-card">
 						<div class="card-body">
 							<h4 class="card-title">
 								<div class="row">
 									<div class="col">
-										<%= detail.airline %>			
-									</div>	
+										<%= detail.airline %>
+									</div>
 									<div class="col text-center">
 										<%= detail.fromTime %><span class="fas fa-plane plane"></span><%= detail.toTime %>								
 									</div>
@@ -67,7 +67,7 @@
 				</form>
 				<br>
 			<% } %>
-			
+
 		</div>
 	</div>
 </div>
