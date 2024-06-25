@@ -19,7 +19,7 @@ const User = require("./models/user");
 const flightRoutes = require("./routes/flight");
 const authRoutes = require("./routes/auth");
 
-const dbUrl = process.env.dbURL || "mongodb://localhost:27017/avian";
+const dbUrl = process.env.dbURL;
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -45,7 +45,7 @@ app.use(express.urlencoded({ extended: true }));
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     secret: process.env.dbSECRET,
-    touchAfter: 24*60*60
+    touchAfter: 24 * 60 * 60
 });
 store.on("error", function (err) {
     console.log("Session Store Error", err);
@@ -60,8 +60,8 @@ const sessionConfig = {
     cookie: {
         httpOnly: true,
         // secure: true,
-        expires: Date.now() + 1000*60*60*24*7,
-        maxAge: 1000*60*60*24*7
+        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7
     }
 }
 app.use(session(sessionConfig));
@@ -94,7 +94,7 @@ app.all("*", (req, res, next) => {
 
 app.use((err, req, res, next) => {
     console.log(err.message);
-    req.flash("error", "Oh No, Something Went Wrong!");
+    // req.flash("error", "Oh No, Something Went Wrong!");
     res.redirect("/");
 });
 

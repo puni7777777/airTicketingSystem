@@ -21,7 +21,7 @@ router.route("/review")
 
 router.route("/traveller")
     .get(flight.renderTravellerForm)
-    .post(isLoggedIn, catchAsync(flight.bookTicket)); 
+    .post(isLoggedIn, catchAsync(flight.bookTicket));
 
 router.route("/bookings")
     .get(isLoggedIn, catchAsync(flight.showBookings));
@@ -37,7 +37,7 @@ router.route("/cancel/:id/:value")
 
 router.route("/contact")
     .get(flight.renderContactForm)
-    .post(catchAsync(flight.saveContactDetails)); 
+    .post(catchAsync(flight.saveContactDetails));
 
 
 module.exports = router;

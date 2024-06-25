@@ -37,14 +37,13 @@ function generateDetails(from, to, date, passengerCount, group) {
 
         details.push(detail);
     }
-    
     return details;
 }
 
 
 function getCity(code) {
     for (const airport of airports) {
-        if (code === airport.IATA_code ) return airport.city_name;  
+        if (code === airport.IATA_code ) return airport.city_name;
     }
 }
 
@@ -52,10 +51,10 @@ function getCity(code) {
 function sorting(details, sortby) {
     if (sortby === "price") {
         details.sort((a, b) => a.price - b.price);
-    } 
+    }
     else if (sortby === "duration") {
         details.sort((a, b) => a.duration - b.duration);
-    } 
+    }
     else if (sortby === "ao") {
         details.sort((a, b) => {
             let fa = a.airline.toLowerCase(),

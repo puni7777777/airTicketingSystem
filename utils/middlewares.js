@@ -29,7 +29,7 @@ module.exports.validateSearchData = (req, res, next) => {
         req.flash("error", "Please select a valid Airport Code.");
         return res.redirect("/");
     }
- 
+
     // Date Validation
     let userDate = date.split(".");
     [ userDate[0], userDate[1] ] = [ userDate[1], userDate[0] ];

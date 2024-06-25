@@ -1,14 +1,7 @@
-# Avian
+# Air Ticketing System
 
-Avian is a website where users can search, book and/or cancel flight tickets.
+Air Ticketing System is a website where users can search, book and/or cancel flight tickets.
 
-https://user-images.githubusercontent.com/78139798/123645171-b8d04f00-d843-11eb-8119-1d20533a5b05.mp4
-
-<br>
-
-## Live Demo
-
-To see the project in action, go to [http://avian-official.herokuapp.com/](http://avian-official.herokuapp.com/)
 
 <br>
 
@@ -31,14 +24,13 @@ git clone https://github.com/akshat-rawat/Avian.git
 
 #### Change the folder and Install dependencies.
 ```sh
-cd avian
 npm install
 ```
 
 #### Create a `.env` file and add the following:
 ```sh
 seshSECRET = <session secret>
-dbSECRET = <database secret>
+dbURL = <database secret>
 ```
 
 #### Run the project.
@@ -92,8 +84,3 @@ npm start
 * [express-session](https://github.com/expressjs/session#express-session)
 * [connect-flash](https://github.com/jaredhanson/connect-flash#connect-flash)
 
-### Platforms
-
-* [git](https://git-scm.com/)
-* [heroku](https://www.heroku.com/)
-* [github](https://github.com/)

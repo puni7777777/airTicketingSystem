@@ -60,7 +60,7 @@ module.exports.bookTicket = async (req, res) => {
 }
 
 module.exports.showBookings = async (req, res) => {
-    const details = await BookingDetail.find({ user: req.user._id});
+    const details = await BookingDetail.find({ user: req.user._id });
     res.render("flights/bookings", { details, getCity });
 }
 
@@ -81,9 +81,9 @@ module.exports.deleteBookings = async (req, res) => {
     let passengers = bookingDetail.passengers;
     passengers.splice(value, 1);
     if (passengers.length > 0) {
-        await BookingDetail.findByIdAndUpdate(id, { passengers });  
+        await BookingDetail.findByIdAndUpdate(id, { passengers });
         req.flash("success", "Your Booking has been Cancelled!");
-        return res.redirect("/cancel/"+id);      
+        return res.redirect("/cancel/" + id);
     }
     await BookingDetail.findByIdAndDelete(id);
     req.flash("success", "Your Booking has been Cancelled!");
