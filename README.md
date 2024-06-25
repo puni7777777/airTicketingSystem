@@ -19,7 +19,7 @@ Once you have Node.js and MongoDB installed on your computer,
 
 #### Clone or download this repository.
 ```sh
-git clone https://github.com/akshat-rawat/Avian.git
+git clone https://github.com/puni7777777/airTicketingSystem.git
 ```
 
 #### Change the folder and Install dependencies.

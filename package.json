@@ -1,5 +1,5 @@
 {
-  "name": "avian",
+  "name": "Air Ticketing System",
   "version": "1.0.0",
   "description": "Airline Reservations System",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akshat-rawat/Avian.git"
+    "url": "git+https://github.com/puni7777777/airTicketingSystem.git"
   },
   "author": "Akshat Rawat",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akshat-rawat/Avian/issues"
+    "url": "https://github.com/puni7777777/airTicketingSystem/issues"
   },
-  "homepage": "https://github.com/akshat-rawat/Avian#readme",
+  "homepage": "https://github.com/puni7777777/airTicketingSystem#readme",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.4.1",
